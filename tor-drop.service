@@ -1,0 +1,11 @@
+[Unit]
+Description=tor-drop service.
+
+[Service]
+Type=simple
+ExecStart=/path/to/tor-drop
+User=User
+WorkingDirectory=/path/to/tor-drop/config/and/keys
+
+[Install]
+WantedBy=multi-user.target
